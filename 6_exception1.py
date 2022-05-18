@@ -10,11 +10,16 @@
     
 """
 
-def hello_user():
+def hello_user(answer):
     """
     Замените pass на ваш код
     """
-    pass
+    try:
+        while answer != "Хорошо":
+            print("На вопрос 'Как дела?', отвечают: 'Хорошо'")
+            answer = input("Как дела?")
+    except KeyboardInterrupt:
+        print('Пока!')
     
 if __name__ == "__main__":
-    hello_user()
+    hello_user(input("Как дела?"))
