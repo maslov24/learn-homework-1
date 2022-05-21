@@ -12,6 +12,7 @@ charset = utf-8
 
 [*.py]
 max_line_length = 120
+indent_size = 4
 
 # Use 2 spaces for the HTML files
 [*.html]
